@@ -1,0 +1,11 @@
+:root {
+    --primary-blue: rgb(102, 108, 163);
+    --primary-dark-blue: rgb(19, 24, 63);
+    --grey: rgb(131, 134, 154);
+    --dark-pink: rgb(247, 71, 128);
+    --light-pink: rgb(255, 167, 195);
+    --orange-pink-gradient: rgb(255, 111, 72) rgb(240, 42, 166);
+    --blue-pink-gradient: rgb(72, 81, 255) rgb(240, 42, 166);
+    --font-family: 'Plus Jakarta Sans', sans-serif;
+    --gradient-orange: linear-gradient(180.3deg, rgb(255, 111, 72) 5.5%, rgb(240, 42, 166) 90.2%)
+}
