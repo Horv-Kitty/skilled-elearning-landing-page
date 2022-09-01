@@ -341,8 +341,56 @@ footer {
     color: var(--primary-dark-blue);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 350px) {
 
+    .grid-container>* {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-button {
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .footer-logo-footer {
+        align-self: center;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-button {
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .website-logo-header {
+        align-self: center;
+    }
+
+    .text-button {
+        display: block;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+
+    .text-container {
+        max-width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 700px) {
     .website-image {
         display: none;
     }
