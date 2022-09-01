@@ -265,7 +265,7 @@ h3 {
 
 /* FOOTER */
 
-footer {
+.footer-background-color {
     background-color: var(--primary-dark-blue);
 }
 
