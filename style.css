@@ -13,6 +13,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    border: 0;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
 }
 
 .body-container {
+    margin: auto;
     margin-top: 24px;
 }
 
@@ -56,6 +58,7 @@ body {
     display: flex;
     justify-self: center;
     align-self: flex-end;
+    z-index: 1;
 }
 
 .header-button:hover {
@@ -73,10 +76,6 @@ body {
     margin-top: 185px;
     width: 398px;
     height: auto;
-}
-
-.website-image {
-    max-width: 100%;
 }
 
 /*
@@ -449,6 +448,16 @@ footer {
 }
 
 @media (max-width: 700px) {
+    .hero-images {
+        display: none;
+    }
+
+    .hero-mobile-image {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
     .body-container {
         max-width: 300px;
         margin: auto;
@@ -459,14 +468,9 @@ footer {
     }
 
     .text-container {
-        margin-block: 40px 30px;
+        margin-block: 40px;
         width: 300px;
         height: auto;
-    }
-
-    .website-image {
-        display: block;
-        margin: 0 auto;
     }
 
     h1 {
@@ -539,20 +543,28 @@ footer {
 }
 
 @media (min-width: 700px) {
+    div .hero-images {
+        background-image: url('assets/image-hero-tablet.png');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 95vh;
+    }
+
+    .hero-mobile-image {
+        display: none;
+    }
 
     .body-container {
         max-width: 700px;
-        margin: auto;
+        overflow: hidden;
     }
 
     .footer-container {
         max-width: 700px;
-    }
-
-    .website-image {
-        position: absolute;
-        top: -80px;
-        right: -200px;
     }
 
     .text-container {
@@ -653,10 +665,19 @@ footer {
 }
 
 @media (min-width: 1150px) {
+    div .hero-images {
+        background-image: url('assets/image-hero-desktop.png');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 110vh;
+    }
 
     .body-container {
         max-width: 1100px;
-        margin: auto;
     }
 
     .footer-container {
@@ -668,11 +689,6 @@ footer {
         width: 398px;
         height: auto;
         margin-bottom: 230px;
-    }
-
-    .website-image {
-        top: -150px;
-        right: -280px;
     }
 
     /* HEADER */
