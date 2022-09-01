@@ -109,6 +109,7 @@ body {
 
 h1 {
     font-family: var(--font-family);
+    color: var(--primary-dark-blue);
     font-style: normal;
     font-size: 30px;
     font-weight: 800;
@@ -118,6 +119,7 @@ h1 {
 
 .text-p {
     font-family: var(--font-family);
+    color: var(--grey);
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
