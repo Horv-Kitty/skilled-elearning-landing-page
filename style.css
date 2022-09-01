@@ -21,6 +21,11 @@ body {
     overflow-x: hidden;
 }
 
+.overflow-container {
+    position: relative;
+    overflow: hidden;
+}
+
 .body-container {
     max-width: 300px;
     margin: auto;
